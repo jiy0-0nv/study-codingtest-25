@@ -21,6 +21,8 @@ int main() {
     while (left < right) {
         int total = arr[left] + arr[right];  
 
+        
+
         if (total == m) {     
             count++;
             left++;           
