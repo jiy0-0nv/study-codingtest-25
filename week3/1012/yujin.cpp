@@ -34,7 +34,7 @@ int main() {
 
         vector<vector<int>> field(N, vector<int>(M, 0));
         vector<vector<bool>> visit(N, vector<bool>(M, 0));
-        vector<vector<int>> cab(K, 2);
+        vector<vector<int>> cab(K, vector<int>(2, 0));
         for (int i = 0; i < K; i++) {
             int X, Y;
             cin >> X >> Y;
