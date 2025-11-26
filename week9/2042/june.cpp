@@ -7,10 +7,13 @@ long long a,b,c;
 long long org[1000002];
 long long arr[1000002];
 
+
+// https://yabmoons.tistory.com/438 
+// Fenwick Tree
 void update(int index, long long diff, int size){
 
     while( index <= size ){
-        arr[index] += diff;
+        arr[index] += diff; // diff 를 업데이트해준다. 안 그러면 좀 오류남
         index += (index & -index);
     }
 }
